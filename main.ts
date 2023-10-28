@@ -16,7 +16,7 @@ if (!MONGO_URL) {
   console.log("No mongo URL found");
   Deno.exit(1);
 }
-await mongoose.connect(MONGO_URL);
+await mongoose.connect("mongodb+srv://javier:javier@nebrija.awzbgfs.mongodb.net/?retryWrites=true&w=majority");
 const app = express();
 app.use(express.json());
 app
